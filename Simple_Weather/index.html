@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+    
+        <title>The HTML5 Herald</title>
+        <meta name="description" content="JAVASCRIPT API EXAMPLES">
+        <meta name="author" content="SitePoint">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> 
+        <link rel="stylesheet" href="css/styles.css?v=1.0">
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    
+    </head>
+    
+    <body>
+        <div class="jumbotron text-center">
+            <div class="container weather-details">
+                <h1 id='cityName' class="city-name"></h1>
+
+                <div id="hourlyWeatherDiv">
+                    <div class="container hourly-weather-details">
+                        <div class="row top-row">
+                            <div id="hourlyFirstSection" class="col-sm">
+                                <p id="hourlyFirstTimeSection" class="hourly-time"></p>
+                                <i id="hourlyFirstIconSection" class="hourly-daily-icons"></i>
+                                <p id="hourlyFirstSummarySection"></p>
+                                <p id="hourlyFirstTempSection"></p>
+                                <p id="hourlyFirstWindSection"></p>
+                            </div>
+                            <div id="hourlySecondSection" class="col-sm">
+                                <p id="hourlySecondTimeSection" class="hourly-time"></p>
+                                <i id="hourlySecondIconSection" class="hourly-daily-icons"></i>
+                                <p id="hourlySecondSummarySection"></p>
+                                <p id="hourlySecondTempSection"></p>
+                                <p id="hourlySecondWindSection"></p>
+                            </div>
+                            <div id="hourlyThirdSection" class="col-sm">
+                                <p id="hourlyThirdTimeSection" class="hourly-time"></p>
+                                <i id="hourlyThirdIconSection" class="hourly-daily-icons"></i>
+                                <p id="hourlyThirdSummarySection"></p>
+                                <p id="hourlyThirdTempSection"></p>
+                                <p id="hourlyThirdWindSection"></p>        
+                            </div>
+                        </div>
+
+                        <div class="row bottom-row weather">
+                            <div id="hourlyFourthSection" class="col-sm">
+                                <p id="hourlyFourthTimeSection" class="hourly-time"></p>
+                                <i id="hourlyFourthIconSection" class="hourly-daily-icons"></i>
+                                <p id="hourlyFourthSummarySection"></p>
+                                <p id="hourlyFourthTempSection"></p>
+                                <p id="hourlyFourthWindSection"></p>
+                            </div>
+                            <div id="hourlyFifthSection" class="col-sm">
+                                <p id="hourlyFifthTimeSection" class="hourly-time"></p>
+                                <i id="hourlyFifthIconSection" class="hourly-daily-icons"></i>
+                                <p id="hourlyFifthSummarySection"></p>
+                                <p id="hourlyFifthTempSection"></p>
+                                <p id="hourlyFifthWindSection"></p>
+                            </div>
+                            <div id="hourlySixthSection" class="col-sm">
+                                <p id="hourlySixthTimeSection" class="hourly-time"></p>
+                                <i id="hourlySixthIconSection" class="hourly-daily-icons"></i>
+                                <p id="hourlySixthSummarySection"></p>
+                                <p id="hourlySixthTempSection"></p>
+                                <p id="hourlySixthWindSection"></p>      
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+
+                <div id="dailyWeatherDiv">
+                    <div class="container daily-weather-details">
+                        <div class="row top-row">
+                            <div id="dailyFirstSection" class="col-sm">
+                                <p id="dailyFirstDaySection" class="daily-time"></p>
+                                <i id="dailyFirstIconSection" class="hourly-daily-icons"></i>
+                                <p id="dailyFirstSummarySection"></p>
+                                <p id="dailyFirstTempSection"></p>
+                                <p id="dailyFirstWindSection"></p>
+                            </div>
+                            <div id="dailySecondSection" class="col-sm">
+                                <p id="dailySecondDaySection" class="hourly-time"></p>
+                                <i id="dailySecondIconSection" class="hourly-daily-icons"></i>
+                                <p id="hourlySecondSummarySection"></p>
+                                <p id="hourlySecondTempSection"></p>
+                                <p id="hourlySecondWindSection"></p>
+                            </div>
+                            <div id="dailyThirdSection" class="col-sm">
+                                <p id="dailyThirdDaySection" class="hourly-time"></p>
+                                <i id="dailyThirdIconSection" class="hourly-daily-icons"></i>
+                                <p id="hourlyThirdSummarySection"></p>
+                                <p id="hourlyThirdTempSection"></p>
+                                <p id="hourlyThirdWindSection"></p>        
+                            </div>
+                        </div>
+
+                        <div class="row bottom-row weather">
+                            <div id="dailyFourthSection" class="col-sm">
+                                <p id="dailyFourthDaySection" class="hourly-time"></p>
+                                <i id="dailyFourthIconSection" class="hourly-daily-icons"></i>
+                                <p id="hourlyFourthSummarySection"></p>
+                                <p id="hourlyFourthTempSection"></p>
+                                <p id="hourlyFourthWindSection"></p>
+                            </div>
+                            <div id="dailyFifthSection" class="col-sm">
+                                <p id="dailyFifthDaySection" class="hourly-time"></p>
+                                <i id="dailyFifthIconSection" class="hourly-daily-icons"></i>
+                                <p id="hourlyFifthSummarySection"></p>
+                                <p id="hourlyFifthTempSection"></p>
+                                <p id="hourlyFifthWindSection"></p>
+                            </div>
+                            <div id="dailySixthSection" class="col-sm">
+                                <p id="dailySixthDaySection" class="hourly-time"></p>
+                                <i id="dailySixthIconSection" class="hourly-daily-icons"></i>
+                                <p id="hourlySixthSummarySection"></p>
+                                <p id="hourlySixthTempSection"></p>
+                                <p id="hourlySixthWindSection"></p>      
+                            </div>
+                        
+                        </div>
+
+                    </div>
+    
+                </div>
+
+                <div id="currentWeatherDiv" class="current-weather">
+                    <i id="currentWeatherIcon"></i>
+                    <div class="vertical-center">
+                        <div class="container">
+                            <div class="align-middle weather-detail-div">
+                                <p id='currentTemp'></p>
+                                <p id='currentSummary'></p>
+                                <p id='currentFeelsLikeTemp'></p>
+                                <p id='currentWindSpeed'></p>
+                                <p id='currentPrecipProbability'></p>
+                                <p id='currentHumidity'></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="buttonRow">
+                <div class="row">
+                    <div class="col-sm">
+                        <button id="changeToCurrentButton" class="btn btn-primary btn-small button-row" type="submit">Current</button>
+                    </div>
+                    <div class="col-sm">
+                        <button id="changeToHourlyButton" class="btn btn-primary btn-small button-row" type="submit">Hourly</button>
+                    </div>
+                    <div class="col-sm">
+                        <button id="changeToDailyButton" class="btn btn-primary btn-small button-row" type="submit">Daily</button>
+                    </div>
+                </div>    
+
+                
+                <button id="changeToCelButton" class="btn btn-primary btn-small button-row" type="submit">Cel/KMph</button>
+                </div>
+
+        </div>
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>  
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
